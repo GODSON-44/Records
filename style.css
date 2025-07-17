@@ -1,0 +1,151 @@
+.body{
+    /* align-items: end;
+     */
+     background-color: gray;
+}
+.camera{
+    height: 100%;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+#QR{
+    color: red;
+}
+
+#reader{
+    width: 100%; 
+    /* position:fixed; */
+    height:100%; 
+    overflow: hidden;
+}
+
+
+
+#reader > video {
+    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
+  }
+
+.navbar-toggler{
+        /* height: 100px;
+         */
+         width:10% ;
+         padding: 10px;
+    }
+
+/* .card{
+    align-items: center;
+} */
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+#prps{
+    border:none;
+    border-bottom: 1px solid gray;
+    width:100%;
+    /* padding: 1%; */
+    margin: 2%;
+    margin-top:0;
+    outline: none
+}
+
+button{
+    width: 40%;
+    text-align: center;
+    height: 30%;
+    
+}
+#logo{
+    height: 50px;
+    width: 40px;
+}
+
+.card{
+    background: pink;
+    height: 35vh;
+    width: 32vw;
+}
+
+
+
+
+/* .datatable{
+    /* height: 300px; */
+    /* width: 100%;
+    background-color: gray;
+}  */
+
+.datatable{
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* or more, depending on your table */
+}
+
+
+
+
+
+
+/* media Query!!! */
+@media(max-width:590px){
+    .camera{
+        height: 570px;
+
+    }
+    #reader{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        width: 60vw;
+    }
+    .button{
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: pink; */
+        width: 100%;
+        /* align-items: center; */
+        padding: 5px;
+        margin: 6px;
+    }
+    button{
+        height: 15%;
+        width: 37%;
+        /* align-items: center; */
+        padding: 1px;
+        margin: 2px;
+    }
+
+    .navbar-toggler{
+        /* height: 100px;
+         */
+         width:15% ;
+         padding: 10px;
+    }
+}
+
+
+
+
+
