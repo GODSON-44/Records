@@ -93,6 +93,10 @@ button{
 .datatable{
   overflow-x: auto;
   max-width: 100%;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  min-height: 300px;
 }
 
 table {
@@ -100,9 +104,6 @@ table {
   border-collapse: collapse;
   min-width: 600px; /* or more, depending on your table */
 }
-
-
-
 
 
 
@@ -126,15 +127,15 @@ table {
         /* background-color: pink; */
         width: 100%;
         /* align-items: center; */
-        padding: 5px;
-        margin: 6px;
+        /* padding: 5px;
+        margin: 6px; */
     }
     button{
         height: 15%;
         width: 37%;
         /* align-items: center; */
-        padding: 1px;
-        margin: 2px;
+        /* padding: 1px;
+        margin: 2px; */
     }
 
     .navbar-toggler{

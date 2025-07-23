@@ -15,6 +15,7 @@ let contw = qrframe.clientWidth;
 
 let data;
 async function onScanSuccess(decodedText, decodedResult) {
+        const now = new Date();
         console.log("QR Code scanned: ", decodedText);
         data = decodedText.split(',');
         settext.innerText = data[0] + "-" + data[1];
@@ -27,13 +28,13 @@ async function onScanSuccess(decodedText, decodedResult) {
 
 
         // Adding the data
-        let html = `<tr id = "newrow"><th scope="row">${curr+1}</th><td >${data[0]}</td><td >${data[1]}</td><td>${data[2]}</td><td>${data[4]}</td><td>-</td></tr>`;
+        let html = `<tr id = "newrow"><th scope="row">${curr+1}</th><td >${data[0]}</td><td >${data[1]}</td><td>${data[2]}</td><td>${data[4]}</td><td>${now.toLocaleString()}</td></tr>`;
         table.innerHTML +=  html;
         curr++;
 
 
         purpose.value = "";
-        await post(data);// called after stoping the scanner impostant
+        await post(data);// called after stoping the scanner important
         await get();
       }
 
