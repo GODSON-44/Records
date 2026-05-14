@@ -15,10 +15,7 @@ const db = mysql.createConnection({
     database: 'ashish'
 });
 
-
-
-
-db.connect(err => {
+db.connect(err => { 
     if (err) {
         console.error("Database connection error:", err);
     } else{
@@ -85,7 +82,7 @@ app.post('/post', (req, res) => {
 
 
 
-app.listen(4000, () => { // 0.0.0.0 us to run on any host/devices
+app.listen(4000, "0.0.0.0",() => { // 0.0.0.0 us to run on any host/devices
     console.log('Server running on http://localhost:4000');
 });
 

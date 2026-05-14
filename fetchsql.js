@@ -1,7 +1,8 @@
 
 
 let get = async()=>{
-    let prom = await fetch("http://localhost:4000");
+    // let prom = await fetch("http://localhost:4000");
+    let prom = await fetch("http://192.168.137.1:4000");
     // let data = promis.json();
     console.log(prom);
     let data = await prom.json();
@@ -9,7 +10,7 @@ let get = async()=>{
 }
 
 let post = async(sqldata)=>{ // This functio is called in script.js
-    let prom = await fetch("http://localhost:4000/post",{
+    let prom = await fetch("http://192.168.137.1:4000/post",{
         method: "POST",
         headers:{
             "Content-Type": "application/json"
